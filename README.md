@@ -40,9 +40,41 @@ Besides, I also test the input data.
 ### Installation
 
 ```
-$ git clone https://github.com/namnhce/weighted-random-messege.git
+$ git clone https://github.com/namnhce/weighted-random-messages.git
 ```
 
 ```
-$ cd GOPATH/src/github.com/namnhce/weighted-random-messege.git
+$ cd GOPATH/src/github.com/namnhce/weighted-random-messages
 ```
+
+To run this project
+```
+$ make run INPUT_PATH="file_path"
+```
+
+example: `make run INPUT_PATH="/Users/namnh/Desktop/input.txt"`
+
+## To use it as a library
+```
+go get -u github.com/namnhce/weighted-random-messages/random
+```
+
+Implement:
+```
+package main
+
+import (
+	"fmt"
+
+	"github.com/namnhce/weighted-random-messages/random"
+)
+
+func main() {
+	input := []int64{50, 30, 60}
+	rand := random.F(input)
+	fmt.Println(rand)
+}
+
+```
+
+
