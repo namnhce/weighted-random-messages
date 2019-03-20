@@ -56,7 +56,7 @@ example: `make run INPUT_PATH="/Users/namnh/Desktop/input.txt"`
 
 ## To use it as a library
 ```
-go get -u github.com/namnhce/weighted-random-messages/random
+$ go get -u github.com/namnhce/weighted-random-messages/random
 ```
 
 Implement:
