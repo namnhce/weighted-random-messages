@@ -63,8 +63,8 @@ func ReadData(filePath string) ([]int64, error) {
 	if err != nil {
 		return nil, err
 	}
-	r := bufio.NewReader(file)
 
+	r := bufio.NewReader(file)
 	content := ""
 	for {
 		rl, err := readLine(r)
